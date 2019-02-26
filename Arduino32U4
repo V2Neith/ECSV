@@ -1,0 +1,155 @@
+    #include <Keyboard.h>
+    const int bouton1 = 2;
+    const int bouton2 = 3;
+    const int bouton3 = 4;
+    const int bouton4 = 5;
+    const int bouton5 = 6;
+    const int bouton6 = 7;
+    const int bouton7 = 8;
+    const int bouton8 = 9;
+    const int boutona = 10;
+    const int boutonb = 14;
+    const int boutonc = 15;
+    const int boutonON = 16;
+    bool flag = true;
+    void setup()
+    {
+      pinMode(bouton1, INPUT);
+      pinMode(bouton2, INPUT);
+      pinMode(bouton3, INPUT);
+      pinMode(bouton4, INPUT);
+      pinMode(bouton5, INPUT);
+      pinMode(bouton6, INPUT);
+      pinMode(bouton7, INPUT);
+      pinMode(bouton8, INPUT);
+      pinMode(bouton9, INPUT);
+      pinMode(boutona, INPUT);
+      pinMode(boutonb, INPUT);
+      pinMode(boutonc, INPUT);
+      pinMode(boutonON, INPUT);
+    }
+    void loop()
+    {
+      if (digitalRead(boutonON))
+      {
+        if(flag)
+        {
+          Keyboard.begin();
+          flag = false;
+        }
+        
+        if(digitalRead(bouton1))
+        {
+          Keyboard.press('lettre');
+          Keyboard.press('lettre');
+          delay(100);
+          Keyboard.releaseAll();
+          delay(100);
+        }
+        else if(digitalRead(bouton2))
+        {
+          Keyboard.press('lettre');
+          Keyboard.press('lettre');
+          delay(100);
+          Keyboard.releaseAll();
+          delay(100);
+        }
+        else if(digitalRead(bouton3))
+        {
+          Keyboard.press('lettre');
+          Keyboard.press('lettre');
+          delay(100);
+          Keyboard.releaseAll();
+          delay(100);
+        }
+        else if(digitalRead(bouton4))
+        {
+          Keyboard.press('lettre');
+          Keyboard.press('lettre');
+          delay(100);
+          Keyboard.releaseAll();
+          delay(100);
+        }
+        else if(digitalRead(bouton4))
+        {
+          Keyboard.press('lettre');
+          Keyboard.press('lettre');
+          delay(100);
+          Keyboard.releaseAll();
+          delay(100);
+        }
+        else if(digitalRead(bouton5))
+        {
+          Keyboard.press('lettre');
+          Keyboard.press('lettre');
+          delay(100);
+          Keyboard.releaseAll();
+          delay(100);
+        }
+        else if(digitalRead(bouton6))
+        {
+          Keyboard.press('lettre');
+          Keyboard.press('lettre');
+          delay(100);
+          Keyboard.releaseAll();
+          delay(100);
+        }
+        else if(digitalRead(bouton7))
+        {
+          Keyboard.press('lettre');
+          Keyboard.press('lettre');
+          delay(100);
+          Keyboard.releaseAll();
+          delay(100);
+        }
+        else if(digitalRead(bouton8))
+        {
+          Keyboard.press('lettre');
+          Keyboard.press('lettre');
+          delay(100);
+          Keyboard.releaseAll();
+          delay(100);
+        }
+        else if(digitalRead(bouton9))
+        {
+          Keyboard.press('lettre');
+          Keyboard.press('lettre');
+          delay(100);
+          Keyboard.releaseAll();
+          delay(100);
+        }
+         else if(digitalRead(boutona))
+        {
+          Keyboard.press('lettre');
+          Keyboard.press('lettre');
+          delay(100);
+          Keyboard.releaseAll();
+          delay(100);
+        }
+         else if(digitalRead(boutonb))
+        {
+          Keyboard.press('lettre');
+          Keyboard.press('lettre');
+          delay(100);
+          Keyboard.releaseAll();
+          delay(100);
+        }
+         else if(digitalRead(boutonc))
+        {
+          Keyboard.press('lettre');
+          Keyboard.press('lettre');
+          delay(100);
+          Keyboard.releaseAll();
+          delay(100);
+        }
+      }
+      else
+      {
+        if(!flag)
+        {
+          Keyboard.end();
+          flag = true;
+        }
+      }
+    }
+    // Fait avec ❤ par Virgil Goudiard
