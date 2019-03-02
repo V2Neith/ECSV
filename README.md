@@ -1,2 +1,3 @@
 # ECSV
-Simulateur de Vol FSX / P3D / Generic
+Simulateur de Vol generic*
+//*Fonctionnant sous P3D , XPLANE , FSX.
