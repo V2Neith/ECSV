@@ -1,2 +1,2 @@
 # ECSV
-Emulateur Clavier Simulation Vol
+Simulateur de Vol FSX / P3D / Generic
